@@ -1,0 +1,84 @@
+#contacto {
+    .nav {
+        @extend %nav;
+    }
+
+    .img {
+        @extend %img;
+    }
+
+    .menu {
+        @extend %menu;
+        @include menus (5px, 1rem);
+
+        &:hover {
+            background-color: white;
+            transition: 0.3s;
+            color: black;
+        }
+    }
+
+    .link {
+        @extend %link;
+
+        i {
+            @extend %i;
+        }
+
+    }
+
+    .form-label {
+        color: white;
+        margin-bottom: 0.5rem;
+    }
+
+
+    #row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 5px;
+    }
+
+    #exampleFormControlInput1 {
+        display: block;
+        width: 400px;
+        height: 50px;
+    }
+
+    #exampleFormControlInput2 {
+        display: block;
+        width: 400px;
+        height: 50px;
+    }
+
+    #textArea {
+        border-radius: 10px;
+        height: 200px;
+        width: 400px;
+        resize: none;
+    }
+
+
+    .maps {
+        margin-left: 4rem;
+        border: solid 5px black;
+    }
+
+    .contacto {
+        margin-top: 9rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .h1 {
+        @extend %h1;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: #1e7cb5;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg");
+    }
+
+}

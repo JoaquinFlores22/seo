@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "header header header header"
+        "header header header header"
+        "footer footer footer footer";
+}
+@import "./secciones/media";
+@import "./variables/extend";
+
+
+
+@import "./secciones/index";
+@import "./secciones/footer";
+@import "./secciones/biografia";
+@import "./secciones/contacto";
+@import "./secciones/mi-trabajo";
+@import "./secciones/galeria";
+
+
+

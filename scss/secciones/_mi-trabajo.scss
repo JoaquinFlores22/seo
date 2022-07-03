@@ -1,0 +1,65 @@
+#trabajo {
+    .headerMitrabajo {
+        display: flex;
+        flex-direction: row;
+        grid-area: header;
+        background-color: #1e7cb5;
+
+    }
+
+    .nav {
+        @extend %nav;
+    }
+
+    .img {
+        @extend %img;
+    }
+
+    .menu {
+        @extend %menu;
+        @include menus (5px, 1rem);
+
+        &:hover {
+            background-color: white;
+            transition: 0.3s;
+            color: black;
+        }
+    }
+
+    .header {
+        grid-area: header;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/fondo.jpg");
+    }
+
+    .link {
+        @extend %link;
+
+        i {
+            @extend %i;
+        }
+    }
+
+    .contacto {
+
+        @extend %contacto;
+
+        .h1 {
+            @extend %h1;
+        }
+    }
+
+    .cajaVideo {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .video {
+        @extend %video;
+    }
+
+    .parrafo{
+        font-size: 20px;
+        color: white;
+    }
+}

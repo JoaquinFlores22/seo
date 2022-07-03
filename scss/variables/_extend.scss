@@ -1,0 +1,131 @@
+// extend
+
+%nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(30, 124, 181, 1) 33%, rgba(10, 28, 38, 1) 100%);
+
+}
+
+%header {
+    grid-area: header;
+    background-color: #1e7cb5;
+}
+
+%link {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+%i {
+    color: white;
+}
+
+%img {
+    border: solid 1px black;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+%valor {
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+%listado1 {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-between
+}
+
+%precio {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+%menu2 {
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 1rem;
+    color: black;
+}
+
+%jordan {
+    max-width: 250px;
+    border: 1px solid white;
+}
+
+%menu {
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+}
+
+%barra {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+%caja-talles {
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+}
+
+%contacto {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+%h1 {
+    font-size: 2.5rem;
+    border-bottom: solid 5px black;
+    display: flex;
+    color: white;
+}
+
+
+%video {
+    margin-top: 4rem;
+    display: flex;
+    border: white solid 2px;
+    margin-left: 170px;
+}
+
+%vogue{
+    margin-top: 4rem;
+    display: flex;
+    border: white solid 2px;
+}
+
+
+// mixin
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin menus ($margin, $padding) {
+    margin: 5px;
+    padding: 1rem;
+}

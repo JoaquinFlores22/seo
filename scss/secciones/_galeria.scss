@@ -1,0 +1,95 @@
+#galeria {
+    .nav {
+       @extend %nav;
+    }
+
+    .img {
+        @extend %img;
+    }
+
+    .menu {
+        @extend %menu;
+        @include menus (5px, 1rem);
+
+        &:hover {
+            background-color: white;
+            transition: 0.3s;
+            color: black;
+        }
+    }
+
+    .link {
+        @extend %link;
+
+        i {
+            @extend %i;
+        }
+
+    }
+
+    .header {
+        @extend %header;
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #caja-talles {
+        @extend %caja-talles;
+    }
+
+    .menu2 {
+        @extend %menu2;
+
+        &:hover {
+            background-color: black;
+            transition: 0.3s;
+            color: white;
+        }
+    }
+
+    .valor {
+        @extend %valor;
+
+
+
+        &:hover {
+            background-color: black;
+            transition: 0.3s;
+            color: white;
+        }
+    }
+
+    .barra {
+        @extend %barra;
+    }
+
+    #caja-talles {
+        @extend %caja-talles;
+    }
+
+
+    .valor {
+        @extend %valor;
+
+        &:hover {
+            background-color: black;
+            transition: 0.3s;
+            color: white;
+        }
+    }
+
+    .jordan {
+        @extend %jordan;
+    }
+
+    .listado1 {
+        @extend %listado1;
+    }
+
+    .precio {
+        @extend %precio;
+    }
+}
