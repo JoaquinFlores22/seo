@@ -14,5 +14,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaquinFlores22/seo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoaquinFlores22/seo/issues"
+  },
+  "homepage": "https://github.com/JoaquinFlores22/seo#readme",
   "description": ""
 }

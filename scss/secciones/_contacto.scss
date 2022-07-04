@@ -3,6 +3,11 @@
         @extend %nav;
     }
 
+    .header {
+        grid-area: header;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/contacto.jpg");
+    }
+
     .img {
         @extend %img;
     }
@@ -75,9 +80,6 @@
         @extend %h1;
     }
 
-    .header {
-        grid-area: header;
-        background-image: linear-gradient(linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))),  url(../../img/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
-    }
+
 
 }

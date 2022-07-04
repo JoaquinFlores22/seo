@@ -8,120 +8,6 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "nav nav nav nav" "header header header header" "header header header header" "header header header header" "footer footer footer footer"; }
 
-/* MEDIA */
-@media (max-width: 320px) {
-  .grilla {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav nav" "header header header header" "header header header header" "header header header header" "footer footer footer footer"; }
-  div .nav {
-    display: flex;
-    flex-direction: column;
-    height: 95vh; }
-  div .footer {
-    display: inline-block;
-    height: 60vh; }
-  li {
-    margin: 1rem; }
-  .barra {
-    height: 80vh;
-    display: flex;
-    flex-direction: column; }
-  .jordan {
-    width: 200px; }
-  .listado1 {
-    display: inline-block; }
-  .precio {
-    display: flex;
-    flex-direction: column; }
-  .column.subscribe {
-    display: none; }
-  .column.links {
-    display: none; } }
-
-@media (max-width: 380px) {
-  .grilla {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav nav" "header header header header" "header header header header" "header header header header" "footer footer footer footer"; }
-  div .nav {
-    display: inline-block; }
-  .barra {
-    display: flex;
-    flex-direction: column;
-    margin-top: -238px; }
-  .listado1 {
-    display: inline-block; }
-  .link {
-    display: inline-block; }
-  .precio {
-    display: flex;
-    flex-direction: column; }
-  .listado1 {
-    display: inline-block; }
-  .footer {
-    display: inline-block;
-    height: 500px; }
-  .column.subscribe {
-    display: none; }
-  .column.links {
-    display: none; } }
-
-@media (max-width: 430px) {
-  .grilla {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav nav" "header header header header" "header header header header" "header header header header" "footer footer footer footer"; }
-  div .nav {
-    display: inline-block; }
-  .barra {
-    display: flex;
-    flex-direction: column; }
-  .jordan {
-    width: 200px; }
-  .listado1 {
-    display: inline-block; }
-  .link {
-    display: inline-block; }
-  .precio {
-    display: flex;
-    flex-direction: column; }
-  .listado1 {
-    display: inline-block; }
-  .footer {
-    display: inline-block; }
-  .column.subscribe {
-    display: none; }
-  .column.links {
-    display: none; } }
-
-@media (max-width: 768px) {
-  .grilla {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav nav" "header header header header" "header header header header" "header header header header" "footer footer footer footer"; }
-  .listado1 {
-    display: inline-bloc; }
-  .column.subscribe {
-    display: none; } }
-
-@media (max-width: 1024px) {
-  .grilla {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav nav" "header header header header" "header header header header" "header header header header" "footer footer footer footer"; }
-  .jordan {
-    width: 200px; } }
-
-@media (max-width: 1280px) {
-  .jordan {
-    max-width: 200px; } }
-
 #index .nav, #contacto .nav, #trabajo .nav, #galeria .nav {
   grid-area: nav;
   display: flex;
@@ -360,7 +246,7 @@ div.redes {
 
 #biografia .header {
   grid-area: header;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/roma.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/roma.jpg"); }
 
 #biografia .contenedor1 {
   display: flex;
@@ -378,6 +264,10 @@ div.redes {
 #biografia .nombre {
   margin-left: 2rem;
   color: white; }
+
+#contacto .header {
+  grid-area: header;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/contacto.jpg"); }
 
 #contacto .menu {
   margin: 5px;
@@ -422,11 +312,6 @@ div.redes {
   display: flex;
   justify-content: space-evenly; }
 
-#contacto .header {
-  grid-area: header;
-  background-color: #1e7cb5;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"); }
-
 #trabajo .headerMitrabajo {
   display: flex;
   flex-direction: row;
@@ -443,7 +328,7 @@ div.redes {
 
 #trabajo .header {
   grid-area: header;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/fondo.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/fondo.jpg"); }
 
 #trabajo .cajaVideo {
   display: flex;
