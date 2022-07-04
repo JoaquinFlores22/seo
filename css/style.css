@@ -246,7 +246,7 @@ div.redes {
 
 #biografia .header {
   grid-area: header;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/roma.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/roma.jpg); }
 
 #biografia .contenedor1 {
   display: flex;
@@ -267,7 +267,7 @@ div.redes {
 
 #contacto .header {
   grid-area: header;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/contacto.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/contacto.jpg); }
 
 #contacto .menu {
   margin: 5px;
@@ -328,7 +328,7 @@ div.redes {
 
 #trabajo .header {
   grid-area: header;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/fondo.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.jpg); }
 
 #trabajo .cajaVideo {
   display: flex;
