@@ -182,19 +182,9 @@
   #index #index div .footer {
     display: inline-block; } }
 
-@media (min-width: 768px) {
-  #index .listado1 {
-    display: flex;
-    flex-direction: row; }
+@media (max-width: 1024px) {
   #index .jordan {
-    width: 145px; }
-  #index .precio {
-    font-size: 14px; }
-  #index .newsletter {
-    width: 165px; }
-  #index #index div .footer {
-    display: inline-block;
-    min-height: 20vh; } }
+    max-width: 100px; } }
 
 @media (max-width: 1280px) {
   #index .jordan {
