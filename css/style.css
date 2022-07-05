@@ -139,7 +139,7 @@
   #index div .redes i {
     font-size: 55px; } }
 
-@media (max-width: 436px) {
+@media (max-width: 425px) {
   #index .navbar {
     display: grid;
     grid-auto-columns: 1fr;
@@ -147,12 +147,8 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "nav nav nav nav" "header header header header" "footer footer footer footer"; }
-  #index .nav {
-    grid-area: nav; }
-  #index .header {
-    grid-area: header; }
-  #index .footer {
-    grid-area: footer; }
+  #index div .nav {
+    display: inline-block; }
   #index .barra {
     display: flex;
     flex-direction: column; }
@@ -201,6 +197,8 @@
 @media (min-width: 2560px) {
   #index .menu {
     font-size: 30px; }
+  #index .barra #caja-talles {
+    font-size: 28px; }
   #index i {
     font-size: 30px; }
   #index .listado1 {

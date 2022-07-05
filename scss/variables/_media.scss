@@ -56,7 +56,7 @@
         }
     }
 
-    @media (max-width:436px) {
+    @media (max-width:425px) {
         .navbar {
             display: grid;
             grid-auto-columns: 1fr;
@@ -69,17 +69,10 @@
                 "footer footer footer footer";
         }
 
-        .nav {
-            grid-area: nav;
+        div .nav {
+            display: inline-block;
         }
 
-        .header {
-            grid-area: header;
-        }
-
-        .footer {
-            grid-area: footer;
-        }
 
         .barra {
             display: flex;
@@ -172,6 +165,10 @@
         .menu {
             font-size: 30px;
 
+        }
+
+        .barra #caja-talles {
+            font-size: 28px;
         }
 
         i {
