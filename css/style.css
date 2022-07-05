@@ -178,47 +178,93 @@
 
 @media (max-width: 1024px) {
   #index .jordan {
-    max-width: 100px; } }
+    max-width: 100px; }
+  #index input {
+    width: 150px; }
+  #index .column h1 {
+    font-size: 20px; }
+  #index .column h3 {
+    font-size: 20px; }
+  #index div .redes i {
+    font-size: 30px; } }
 
-@media (max-width: 1280px) {
-  #index .jordan {
-    max-width: 200px; } }
-
-@media (max-width: 425px) {
-  #trabajo .headerMitrabajo {
+@media (min-width: 2560px) {
+  #index .menu {
+    font-size: 30px; }
+  #index i {
+    font-size: 30px; }
+  #index .listado1 {
     display: flex;
     flex-direction: row;
-    grid-area: header;
-    background-color: #1e7cb5; }
-  #trabajo .link {
-    display: inline-block; }
-  #trabajo div .nav {
-    display: inline-block; }
-  #trabajo .header {
-    grid-area: header;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.jpg); }
-  #trabajo .cajaVideo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white; }
-  #trabajo .video {
-    width: 50px; }
-  #trabajo .text-center {
-    display: flex;
-    flex-direction: column; }
-  #trabajo .parrafo {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: white; }
-  #trabajo .column.subscribe {
-    display: none; }
-  #trabajo .column.links {
-    display: none; }
-  #trabajo div .footer {
-    display: inline-block;
-    max-height: 50vh; } }
+    justify-content: space-evenly; }
+  #index ul {
+    font-size: 30px; }
+  #index div .redes i {
+    font-size: 50px; }
+  #index footer {
+    display: flex; }
+  #index p {
+    font-size: 30px; }
+  #index .barra a {
+    font-size: 30px; }
+  #index .precio {
+    height: 140px; }
+  #index div .precio .valor {
+    margin-top: 5px;
+    font-size: 30px; }
+  #index .valor:hover {
+    height: 8rem; }
+  #index input {
+    font-size: 30px; }
+  #index .btn {
+    font-size: 30px; }
+  #index .img {
+    border-radius: 150px;
+    max-width: 300px; } }
+
+@media (max-width: 1024px) {
+  #trabajo .container1 .video {
+    width: 600px;
+    height: 350px; }
+  #trabajo .container1 p {
+    margin-left: 8rem;
+    margin-top: 0; } }
+
+@media (width: 1366px) {
+  #trabajo .container1 .video {
+    width: 600px;
+    height: 350px; }
+  #trabajo .container1 p {
+    margin: 6rem;
+    margin-top: 0; } }
+
+@media (min-width: 2560px) {
+  .container1 .video {
+    width: 1054px;
+    height: 596px; }
+  .menu {
+    font-size: 30px; }
+  .container1 p {
+    font-size: 30px;
+    margin: 5rem;
+    margin-top: 0; }
+  i {
+    font-size: 30px; }
+  ul {
+    font-size: 30px; }
+  div .redes i {
+    font-size: 50px; }
+  footer {
+    display: flex; }
+  p {
+    font-size: 30px; }
+  input {
+    font-size: 30px; }
+  .btn {
+    font-size: 30px; }
+  .img {
+    border-radius: 150px;
+    max-width: 300px; } }
 
 @media (max-width: 425px) {
   #galeria .navbar {
@@ -290,11 +336,49 @@
 
 @media (max-width: 1024px) {
   #galeria .jordan {
-    max-width: 100px; } }
+    max-width: 100px; }
+  #galeria input {
+    width: 150px; }
+  #galeria .column h1 {
+    font-size: 20px; }
+  #galeria .column h3 {
+    font-size: 20px; }
+  #galeria div .redes i {
+    font-size: 30px; } }
 
-@media (max-width: 1280px) {
-  #galeria .jordan {
-    max-width: 200px; } }
+@media (min-width: 2560px) {
+  #galeria .menu {
+    font-size: 30px; }
+  #galeria i {
+    font-size: 30px; }
+  #galeria .listado1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  #galeria ul {
+    font-size: 30px; }
+  #galeria div .redes i {
+    font-size: 50px; }
+  #galeria footer {
+    display: flex; }
+  #galeria p {
+    font-size: 30px; }
+  #galeria .barra a {
+    font-size: 30px; }
+  #galeria .precio {
+    height: 140px; }
+  #galeria div .precio .valor {
+    margin-top: 5px;
+    font-size: 30px; }
+  #galeria .valor:hover {
+    height: 8rem; }
+  #galeria input {
+    font-size: 30px; }
+  #galeria .btn {
+    font-size: 30px; }
+  #galeria .img {
+    border-radius: 150px;
+    max-width: 300px; } }
 
 #index .fa-solid {
   margin-left: 5px; }
@@ -518,6 +602,11 @@ div.redes {
 #trabajo .header {
   grid-area: header;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.jpg); }
+
+#trabajo .container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 #trabajo .cajaVideo {
   display: flex;

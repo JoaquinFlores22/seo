@@ -127,78 +127,171 @@
             max-width: 100px;
             ;
         }
+
+        input {
+            width: 150px;
+        }
+
+
+        .column h1 {
+            font-size: 20px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+        }
+
+        div .redes i {
+            font-size: 30px;
+        }
+
     }
 
-    @media (max-width:1280px) {
-        .jordan {
-            max-width: 200px;
+    @media (min-width:2560px) {
+        .menu {
+            font-size: 30px;
+
+        }
+
+        i {
+            font-size: 30px;
+        }
+
+        .listado1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            font-size: 30px;
+        }
+
+        div .redes i {
+            font-size: 50px;
+        }
+
+        footer {
+            display: flex;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .barra a {
+            font-size: 30px;
+        }
+
+        .precio {
+            height: 140px;
+            ;
+        }
+
+        div .precio .valor {
+            margin-top: 5px;
+            font-size: 30px;
+        }
+
+        .valor:hover {
+            height: 8rem;
+        }
+
+        input {
+            font-size: 30px;
+        }
+
+        .btn {
+            font-size: 30px;
+        }
+
+        .img {
+            border-radius: 150px;
+            max-width: 300px;
         }
     }
 }
 
 #trabajo {
-    @media (max-width:425px) {
-        .headerMitrabajo {
-            display: flex;
-            flex-direction: row;
-            grid-area: header;
-            background-color: #1e7cb5;
-
+    @media (max-width:1024px) {
+        .container1 .video {
+            width: 600px;
+            height: 350px;
         }
 
-        .link {
-            display: inline-block;
-        }
-
-
-        div .nav {
-            display: inline-block;
-        }
-
-        .header {
-            grid-area: header;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.jpg);
-        }
-
-        .cajaVideo {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: white;
-        }
-
-        .video {
-            width: 50px;
-        }
-
-        .text-center {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .parrafo {
-            display: flex;
-            flex-direction: column;
-            font-size: 20px;
-            color: white;
-        }
-
-        .column.subscribe {
-            display: none;
-        }
-
-        .column.links {
-            display: none;
-        }
-
-        div .footer {
-            display: inline-block;
-            max-height: 50vh;
+        .container1 p {
+            margin-left: 8rem;
+            margin-top: 0;
         }
     }
 
+    @media (width:1366px) {
+        .container1 .video {
+            width: 600px;
+            height: 350px;
+        }
 
+        .container1 p {
+            margin: 6rem;
+            margin-top: 0;
+        }
+    }
 }
+
+
+
+
+@media (min-width:2560px) {
+    .container1 .video {
+        width: 1054px;
+        height: 596px;
+    }
+
+    .menu {
+        font-size: 30px;
+
+    }
+
+    .container1 p {
+        font-size: 30px;
+        margin: 5rem;
+        margin-top: 0;
+    }
+
+    i {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 30px;
+    }
+
+    div .redes i {
+        font-size: 50px;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    input {
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 30px;
+    }
+
+    .img {
+        border-radius: 150px;
+        max-width: 300px;
+    }
+}
+
 
 #galeria {
     @media (max-width:425px) {
@@ -213,6 +306,7 @@
                 "header header header header"
                 "footer footer footer footer";
         }
+
         div .nav {
             display: inline-block;
         }
@@ -327,12 +421,86 @@
             max-width: 100px;
             ;
         }
-    }
 
-    @media (max-width:1280px) {
-        .jordan {
-            max-width: 200px;
+        input {
+            width: 150px;
+        }
+
+
+        .column h1 {
+            font-size: 20px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+        }
+
+        div .redes i {
+            font-size: 30px;
         }
     }
 
+    @media (min-width:2560px) {
+        .menu {
+            font-size: 30px;
+
+        }
+
+        i {
+            font-size: 30px;
+        }
+
+        .listado1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            font-size: 30px;
+        }
+
+        div .redes i {
+            font-size: 50px;
+        }
+
+        footer {
+            display: flex;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .barra a {
+            font-size: 30px;
+        }
+
+        .precio {
+            height: 140px;
+            ;
+        }
+
+        div .precio .valor {
+            margin-top: 5px;
+            font-size: 30px;
+        }
+
+        .valor:hover {
+            height: 8rem;
+        }
+
+        input {
+            font-size: 30px;
+        }
+
+        .btn {
+            font-size: 30px;
+        }
+
+        .img {
+            border-radius: 150px;
+            max-width: 300px;
+        }
+    }
 }

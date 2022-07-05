@@ -48,6 +48,12 @@
         }
     }
 
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .cajaVideo {
         display: flex;
         justify-content: center;
@@ -55,12 +61,12 @@
     }
 
     .video {
-        width:800px; 
-        height:420px;
+        width: 800px;
+        height: 420px;
         @extend %video;
     }
 
-    .parrafo{
+    .parrafo {
         font-size: 20px;
         color: white;
     }
