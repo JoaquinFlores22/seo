@@ -19,16 +19,16 @@
   grid-area: header;
   background-color: #1e7cb5; }
 
-#index .link, #contacto .link, #trabajo .link, #galeria .link {
+#trabajo .link, #index .link, #contacto .link, #galeria .link {
   display: flex;
   justify-content: flex-start;
   list-style: none;
   margin-top: 2rem; }
 
-#index .link i, #contacto .link i, #trabajo .link i, #galeria .link i {
+#trabajo .link i, #index .link i, #contacto .link i, #galeria .link i {
   color: white; }
 
-#index .img, #contacto .img, #trabajo .img, #galeria .img {
+#trabajo .img, #index .img, #contacto .img, #galeria .img {
   border: solid 1px black;
   max-width: 200px;
   margin: 10px;
@@ -64,7 +64,7 @@
   max-width: 250px;
   border: 1px solid white; }
 
-#index .menu, #contacto .menu, #trabajo .menu, #galeria .menu {
+#trabajo .menu, #index .menu, #contacto .menu, #galeria .menu {
   text-decoration: none;
   border-radius: 15px;
   color: white; }
@@ -90,7 +90,7 @@
   display: flex;
   justify-content: space-evenly; }
 
-#contacto .h1, #trabajo .contacto .h1 {
+#trabajo .contacto .h1, #contacto .h1 {
   font-size: 2.5rem;
   border-bottom: solid 5px black;
   display: flex;
@@ -116,12 +116,6 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "nav nav nav nav" "header header header header" "footer footer footer footer"; }
-  #index .nav {
-    grid-area: nav; }
-  #index .header {
-    grid-area: header; }
-  #index .footer {
-    grid-area: footer; }
   #index div .nav {
     display: inline-block; }
   #index .barra {
@@ -189,6 +183,49 @@
 @media (max-width: 1280px) {
   #index .jordan {
     max-width: 200px; } }
+
+#trabajo .headerMitrabajo {
+  display: flex;
+  flex-direction: row;
+  grid-area: header;
+  background-color: #1e7cb5; }
+
+#trabajo .link {
+  display: inline-block; }
+
+#trabajo div .nav div .nav {
+  display: inline-block; }
+
+#trabajo .menu {
+  margin: 5px;
+  padding: 1rem; }
+  #trabajo .menu:hover {
+    background-color: white;
+    transition: 0.3s;
+    color: black; }
+
+#trabajo .header {
+  grid-area: header;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.jpg); }
+
+#trabajo .cajaVideo {
+  display: flex;
+  justify-content: center;
+  color: white; }
+
+#trabajo .parrafo {
+  font-size: 20px;
+  color: white; }
+
+#trabajo .column.subscribe {
+  display: none; }
+
+#trabajo .column.links {
+  display: none; }
+
+#trabajo div .footer {
+  display: inline-block;
+  max-height: 50vh; }
 
 #index .fa-solid {
   margin-left: 5px; }

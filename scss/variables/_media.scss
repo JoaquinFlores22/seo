@@ -13,18 +13,6 @@
                 "footer footer footer footer";
         }
 
-        .nav {
-            grid-area: nav;
-        }
-
-        .header {
-            grid-area: header;
-        }
-
-        .footer {
-            grid-area: footer;
-        }
-
         div .nav {
             display: inline-block;
         }
@@ -136,7 +124,8 @@
 
     @media (max-width:1024px) {
         .jordan {
-            max-width: 100px; ;
+            max-width: 100px;
+            ;
         }
     }
 
@@ -144,5 +133,91 @@
         .jordan {
             max-width: 200px;
         }
+    }
+}
+
+#trabajo {
+    .headerMitrabajo {
+        display: flex;
+        flex-direction: row;
+        grid-area: header;
+        background-color: #1e7cb5;
+
+    }
+
+    .link {
+        display: inline-block;
+    }
+
+    div .nav {
+        div .nav {
+            display: inline-block;
+        }
+
+    }
+
+    .img {
+        @extend %img;
+    }
+
+    .menu {
+        @extend %menu;
+        @include menus (5px, 1rem);
+
+        &:hover {
+            background-color: white;
+            transition: 0.3s;
+            color: black;
+        }
+    }
+
+    .header {
+        grid-area: header;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondo.jpg);
+    }
+
+    .link {
+        @extend %link;
+
+        i {
+            @extend %i;
+        }
+    }
+
+    .contacto {
+
+        @extend %contacto;
+
+        .h1 {
+            @extend %h1;
+        }
+    }
+
+    .cajaVideo {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .video {
+        @extend %video;
+    }
+
+    .parrafo {
+        font-size: 20px;
+        color: white;
+    }
+
+    .column.subscribe {
+        display: none;
+    }
+
+    .column.links {
+        display: none;
+    }
+
+    div .footer {
+        display: inline-block;
+        max-height: 50vh;
     }
 }
