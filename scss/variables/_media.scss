@@ -1,10 +1,6 @@
 /* MEDIA */
 #index {
-    @media (max-width:425px) {
-        display: inline-block;
-    }
-
-    @media (max-width:430px ) {
+    @media (max-width:425px ) {
         .navbar {
             display: grid;
             grid-auto-columns: 1fr;
@@ -43,7 +39,8 @@
         }
 
         .listado1 {
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
         }
 
         .link {
@@ -59,11 +56,6 @@
             display: inline-block;
         }
 
-        .footer {
-            display: inline-block;
-
-        }
-
         .column.subscribe {
             display: none;
         }
@@ -74,10 +66,9 @@
 
         div .footer {
             display: inline-block;
-            height: 60vh;
+            max-height: 50vh;
         }
     }
-
 
     @media (max-width:436px) {
         .navbar {
@@ -103,11 +94,6 @@
         .footer {
             grid-area: footer;
         }
-
-        div .nav {
-            display: inline-block;
-        }
-
         .barra {
             display: flex;
             flex-direction: column;
@@ -133,12 +119,6 @@
         .listado1 {
             display: inline-block;
         }
-
-        .footer {
-            display: inline-block;
-
-        }
-
         .column.subscribe {
             display: none;
         }
@@ -147,63 +127,12 @@
             display: none;
         }
 
-        div .footer {
+        #index div .footer {
             display: inline-block;
-            height: 60vh;
         }
     }
 
-    @media (min-width:730px) {
-        .navbar {
-            display: grid;
-            grid-auto-columns: 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-                "nav nav nav nav"
-                "header header header header"
-                "footer footer footer footer";
-        }
-        div .nav{
-            display:flex ;
-            flex-direction: row;
-        }
-
-        .listado1 {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .jordan {
-            width: 135px;
-        }
-
-        .precio {
-            font-size: 14px;
-        }
-
-        .newsletter {
-            width: 165px;
-        }
-    }
-
-    @media (min-width:750px) {
-        .grilla {
-            display: grid;
-            grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-                "nav nav nav nav"
-                "header header header header"
-                "header header header header"
-                "header header header header"
-                "footer footer footer footer";
-        }
-        .nav{
-            display:flex ;
-            flex-direction: row;
-        }
+    @media (min-width:768px) {
 
         .listado1 {
             display: flex;
@@ -221,36 +150,10 @@
         .newsletter {
             width: 165px;
         }
-    }
-
-    @media (max-width:766px) {
-        .grilla {
-            display: grid;
-            grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-                "nav nav nav nav"
-                "header header header header"
-                "header header header header"
-                "header header header header"
-                "footer footer footer footer";
-        }
-
-        .listado1 {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .jordan {
-            width: 145px;
-        }
-
-        .precio {
-            font-size: 14px;
-        }
-
-        .newsletter {
-            width: 165px;
+        
+        #index div .footer {
+            display: inline-block;
+            min-height: 20vh;
         }
     }
 
