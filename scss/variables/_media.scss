@@ -1,11 +1,10 @@
 /* MEDIA */
 #index {
-    @media (max-width:425px) {
+    @media (max-width:320px) {
         .navbar {
             display: grid;
             grid-auto-columns: 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
             gap: 0px 0px;
             grid-template-areas:
                 "nav nav nav nav"
@@ -26,22 +25,17 @@
             width: 200px;
         }
 
-        .listado1 {
-            display: flex;
-            flex-direction: column;
-        }
-
         .link {
             display: inline-block;
+        }
+
+        .link li {
+            margin-top: 24px;
         }
 
         .precio {
             display: flex;
             flex-direction: column;
-        }
-
-        .listado1 {
-            display: inline-block;
         }
 
         .column.subscribe {
@@ -55,6 +49,10 @@
         div .footer {
             display: inline-block;
             max-height: 50vh;
+        }
+
+        div .redes i {
+            font-size: 55px;
         }
     }
 
@@ -92,8 +90,8 @@
             width: 200px;
         }
 
-        .listado1 {
-            display: inline-block;
+        .link li {
+            margin-top: 24px;
         }
 
         .link {
@@ -145,6 +143,29 @@
             font-size: 30px;
         }
 
+    }
+
+    @media (max-width:1440px) {
+        .jordan {
+            max-width: 200px;
+            ;
+        }
+
+        input {
+            width: 150px;
+        }
+
+        .column h1 {
+            font-size: 20px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+        }
+
+        div .redes i {
+            font-size: 30px;
+        }
     }
 
     @media (min-width:2560px) {
@@ -212,7 +233,35 @@
     }
 }
 
+
 #trabajo {
+    @media (max-width:425px) {
+        div .nav {
+            display: inline-block;
+        }
+
+        .link {
+            display: inline-block;
+        }
+
+        .link li {
+            margin-top: 10px;
+        }
+
+        .column.subscribe {
+            display: none;
+        }
+
+        .column.links {
+            display: none;
+        }
+
+        div .footer {
+            display: inline-block;
+            max-height: 50vh;
+        }
+    }
+
     @media (max-width:1024px) {
         .container1 .video {
             width: 600px;
@@ -236,62 +285,71 @@
             margin-top: 0;
         }
     }
+
+
+    @media (max-width:1440px) {
+        .container1 .video {
+            width: 600px;
+            height: 350px;
+        }
+
+        .container1 p {
+            margin-left: 8rem;
+            margin-top: 0;
+        }
+    }
+
+    @media (min-width:2560px) {
+        .container1 .video {
+            width: 1054px;
+            height: 596px;
+        }
+
+        .menu {
+            font-size: 30px;
+
+        }
+
+        .container1 p {
+            font-size: 30px;
+            margin: 5rem;
+            margin-top: 0;
+        }
+
+        i {
+            font-size: 30px;
+        }
+
+        ul {
+            font-size: 30px;
+        }
+
+        div .redes i {
+            font-size: 50px;
+        }
+
+        footer {
+            display: flex;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        input {
+            font-size: 30px;
+        }
+
+        .btn {
+            font-size: 30px;
+        }
+
+        .img {
+            border-radius: 150px;
+            max-width: 300px;
+        }
+    }
 }
-
-
-
-
-@media (min-width:2560px) {
-    .container1 .video {
-        width: 1054px;
-        height: 596px;
-    }
-
-    .menu {
-        font-size: 30px;
-
-    }
-
-    .container1 p {
-        font-size: 30px;
-        margin: 5rem;
-        margin-top: 0;
-    }
-
-    i {
-        font-size: 30px;
-    }
-
-    ul {
-        font-size: 30px;
-    }
-
-    div .redes i {
-        font-size: 50px;
-    }
-
-    footer {
-        display: flex;
-    }
-
-    p {
-        font-size: 30px;
-    }
-
-    input {
-        font-size: 30px;
-    }
-
-    .btn {
-        font-size: 30px;
-    }
-
-    .img {
-        border-radius: 150px;
-        max-width: 300px;
-    }
-}
-
 
 #galeria {
     @media (max-width:425px) {
@@ -329,26 +387,30 @@
             display: inline-block;
         }
 
-        .precio {
-            display: flex;
-            flex-direction: column;
-        }
+        .link li {
+            margin-top: 24px;
 
-        .listado1 {
-            display: inline-block;
-        }
+            .precio {
+                display: flex;
+                flex-direction: column;
+            }
 
-        .column.subscribe {
-            display: none;
-        }
+            .listado1 {
+                display: inline-block;
+            }
 
-        .column.links {
-            display: none;
-        }
+            .column.subscribe {
+                display: none;
+            }
 
-        div .footer {
-            display: inline-block;
-            max-height: 50vh;
+            .column.links {
+                display: none;
+            }
+
+            div .footer {
+                display: inline-block;
+                max-height: 50vh;
+            }
         }
     }
 
@@ -440,6 +502,36 @@
         }
     }
 
+    @media (max-width:1440px) {
+        .jordan {
+            max-width: 200px;
+            ;
+        }
+
+        input {
+            width: 150px;
+        }
+
+        .listado1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+
+        .column h1 {
+            font-size: 20px;
+        }
+
+        .column h3 {
+            font-size: 20px;
+        }
+
+        div .redes i {
+            font-size: 30px;
+        }
+    }
+
     @media (min-width:2560px) {
         .menu {
             font-size: 30px;
@@ -503,4 +595,5 @@
             max-width: 300px;
         }
     }
+
 }

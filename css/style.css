@@ -108,12 +108,11 @@
   border: white solid 2px; }
 
 /* MEDIA */
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   #index .navbar {
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "nav nav nav nav" "header header header header" "footer footer footer footer"; }
   #index div .nav {
@@ -123,23 +122,22 @@
     flex-direction: column; }
   #index .jordan {
     width: 200px; }
-  #index .listado1 {
-    display: flex;
-    flex-direction: column; }
   #index .link {
     display: inline-block; }
+  #index .link li {
+    margin-top: 24px; }
   #index .precio {
     display: flex;
     flex-direction: column; }
-  #index .listado1 {
-    display: inline-block; }
   #index .column.subscribe {
     display: none; }
   #index .column.links {
     display: none; }
   #index div .footer {
     display: inline-block;
-    max-height: 50vh; } }
+    max-height: 50vh; }
+  #index div .redes i {
+    font-size: 55px; } }
 
 @media (max-width: 436px) {
   #index .navbar {
@@ -160,8 +158,8 @@
     flex-direction: column; }
   #index .jordan {
     width: 200px; }
-  #index .listado1 {
-    display: inline-block; }
+  #index .link li {
+    margin-top: 24px; }
   #index .link {
     display: inline-block; }
   #index .precio {
@@ -179,6 +177,18 @@
 @media (max-width: 1024px) {
   #index .jordan {
     max-width: 100px; }
+  #index input {
+    width: 150px; }
+  #index .column h1 {
+    font-size: 20px; }
+  #index .column h3 {
+    font-size: 20px; }
+  #index div .redes i {
+    font-size: 30px; } }
+
+@media (max-width: 1440px) {
+  #index .jordan {
+    max-width: 200px; }
   #index input {
     width: 150px; }
   #index .column h1 {
@@ -222,6 +232,21 @@
     border-radius: 150px;
     max-width: 300px; } }
 
+@media (max-width: 425px) {
+  #trabajo div .nav {
+    display: inline-block; }
+  #trabajo .link {
+    display: inline-block; }
+  #trabajo .link li {
+    margin-top: 10px; }
+  #trabajo .column.subscribe {
+    display: none; }
+  #trabajo .column.links {
+    display: none; }
+  #trabajo div .footer {
+    display: inline-block;
+    max-height: 50vh; } }
+
 @media (max-width: 1024px) {
   #trabajo .container1 .video {
     width: 600px;
@@ -238,31 +263,39 @@
     margin: 6rem;
     margin-top: 0; } }
 
+@media (max-width: 1440px) {
+  #trabajo .container1 .video {
+    width: 600px;
+    height: 350px; }
+  #trabajo .container1 p {
+    margin-left: 8rem;
+    margin-top: 0; } }
+
 @media (min-width: 2560px) {
-  .container1 .video {
+  #trabajo .container1 .video {
     width: 1054px;
     height: 596px; }
-  .menu {
+  #trabajo .menu {
     font-size: 30px; }
-  .container1 p {
+  #trabajo .container1 p {
     font-size: 30px;
     margin: 5rem;
     margin-top: 0; }
-  i {
+  #trabajo i {
     font-size: 30px; }
-  ul {
+  #trabajo ul {
     font-size: 30px; }
-  div .redes i {
+  #trabajo div .redes i {
     font-size: 50px; }
-  footer {
+  #trabajo footer {
     display: flex; }
-  p {
+  #trabajo p {
     font-size: 30px; }
-  input {
+  #trabajo input {
     font-size: 30px; }
-  .btn {
+  #trabajo .btn {
     font-size: 30px; }
-  .img {
+  #trabajo .img {
     border-radius: 150px;
     max-width: 300px; } }
 
@@ -286,18 +319,20 @@
     flex-direction: column; }
   #galeria .link {
     display: inline-block; }
-  #galeria .precio {
-    display: flex;
-    flex-direction: column; }
-  #galeria .listado1 {
-    display: inline-block; }
-  #galeria .column.subscribe {
-    display: none; }
-  #galeria .column.links {
-    display: none; }
-  #galeria div .footer {
-    display: inline-block;
-    max-height: 50vh; } }
+  #galeria .link li {
+    margin-top: 24px; }
+    #galeria .link li .precio {
+      display: flex;
+      flex-direction: column; }
+    #galeria .link li .listado1 {
+      display: inline-block; }
+    #galeria .link li .column.subscribe {
+      display: none; }
+    #galeria .link li .column.links {
+      display: none; }
+    #galeria .link li div .footer {
+      display: inline-block;
+      max-height: 50vh; } }
 
 @media (max-width: 436px) {
   #galeria .navbar {
@@ -339,6 +374,22 @@
     max-width: 100px; }
   #galeria input {
     width: 150px; }
+  #galeria .column h1 {
+    font-size: 20px; }
+  #galeria .column h3 {
+    font-size: 20px; }
+  #galeria div .redes i {
+    font-size: 30px; } }
+
+@media (max-width: 1440px) {
+  #galeria .jordan {
+    max-width: 200px; }
+  #galeria input {
+    width: 150px; }
+  #galeria .listado1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
   #galeria .column h1 {
     font-size: 20px; }
   #galeria .column h3 {
