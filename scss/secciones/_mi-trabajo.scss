@@ -55,6 +55,8 @@
     }
 
     .video {
+        width:800px; 
+        height:420px;
         @extend %video;
     }
 
