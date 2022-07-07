@@ -170,7 +170,7 @@
   #index #index div .footer {
     display: inline-block; } }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   #index .jordan {
     width: 150px; }
   #index input {
