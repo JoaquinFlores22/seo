@@ -113,7 +113,7 @@
         }
     }
 
-    @media (max-width:1024px) {
+    @media (min-width:1024px) {
         .jordan {
             max-width: 100px;
             ;
@@ -227,6 +227,9 @@
             border-radius: 150px;
             max-width: 300px;
         }
+    }
+    @media (max-width:1980px){
+
     }
 }
 
