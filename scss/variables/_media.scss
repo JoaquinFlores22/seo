@@ -1,62 +1,6 @@
 /* MEDIA */
 #index {
-    @media (max-width:320px) {
-        .navbar {
-            display: grid;
-            grid-auto-columns: 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-                "nav nav nav nav"
-                "header header header header"
-                "footer footer footer footer";
-        }
-
-        div .nav {
-            display: inline-block;
-        }
-
-        .barra {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .jordan {
-            width: 200px;
-        }
-
-        .link {
-            display: inline-block;
-        }
-
-        .link li {
-            margin-top: 24px;
-        }
-
-        .precio {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .column.subscribe {
-            display: none;
-        }
-
-        .column.links {
-            display: none;
-        }
-
-        div .footer {
-            display: inline-block;
-            max-height: 50vh;
-        }
-
-        div .redes i {
-            font-size: 55px;
-        }
-    }
-
-    @media (max-width:425px) {
+    @media (max-width:436px) {
         .navbar {
             display: grid;
             grid-auto-columns: 1fr;
@@ -69,10 +13,17 @@
                 "footer footer footer footer";
         }
 
-        div .nav {
-            display: inline-block;
+        .nav {
+            grid-area: nav;
         }
 
+        .header {
+            grid-area: header;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
 
         .barra {
             display: flex;
@@ -83,8 +34,8 @@
             width: 200px;
         }
 
-        .link li {
-            margin-top: 24px;
+        .listado1 {
+            display: inline-block;
         }
 
         .link {
@@ -113,26 +64,15 @@
         }
     }
 
-    @media (min-width:768px) {
+    @media (max-width:1024px) {
         .jordan {
-            width: 150px;
-
+            max-width: 100px;
+            ;
         }
 
         input {
             width: 150px;
         }
-
-        .listado1 {
-            padding: 10px;
-        }
-
-        .precio {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-
 
 
         .column h1 {
@@ -146,18 +86,24 @@
         div .redes i {
             font-size: 30px;
         }
-
     }
 
     @media (max-width:1440px) {
         .jordan {
-            max-width: 200px;
+            max-width: 250px;
             ;
         }
 
         input {
             width: 150px;
         }
+
+        .listado1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
 
         .column h1 {
             font-size: 20px;
@@ -176,10 +122,6 @@
         .menu {
             font-size: 30px;
 
-        }
-
-        .barra #caja-talles {
-            font-size: 28px;
         }
 
         i {
@@ -240,7 +182,6 @@
         }
     }
 }
-
 
 #trabajo {
     @media (max-width:425px) {

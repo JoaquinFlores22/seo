@@ -108,38 +108,7 @@
   border: white solid 2px; }
 
 /* MEDIA */
-@media (max-width: 320px) {
-  #index .navbar {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "nav nav nav nav" "header header header header" "footer footer footer footer"; }
-  #index div .nav {
-    display: inline-block; }
-  #index .barra {
-    display: flex;
-    flex-direction: column; }
-  #index .jordan {
-    width: 200px; }
-  #index .link {
-    display: inline-block; }
-  #index .link li {
-    margin-top: 24px; }
-  #index .precio {
-    display: flex;
-    flex-direction: column; }
-  #index .column.subscribe {
-    display: none; }
-  #index .column.links {
-    display: none; }
-  #index div .footer {
-    display: inline-block;
-    max-height: 50vh; }
-  #index div .redes i {
-    font-size: 55px; } }
-
-@media (max-width: 425px) {
+@media (max-width: 436px) {
   #index .navbar {
     display: grid;
     grid-auto-columns: 1fr;
@@ -147,15 +116,19 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "nav nav nav nav" "header header header header" "footer footer footer footer"; }
-  #index div .nav {
-    display: inline-block; }
+  #index .nav {
+    grid-area: nav; }
+  #index .header {
+    grid-area: header; }
+  #index .footer {
+    grid-area: footer; }
   #index .barra {
     display: flex;
     flex-direction: column; }
   #index .jordan {
     width: 200px; }
-  #index .link li {
-    margin-top: 24px; }
+  #index .listado1 {
+    display: inline-block; }
   #index .link {
     display: inline-block; }
   #index .precio {
@@ -170,14 +143,24 @@
   #index #index div .footer {
     display: inline-block; } }
 
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   #index .jordan {
+    max-width: 100px; }
+  #index input {
     width: 150px; }
+  #index .column h1 {
+    font-size: 20px; }
+  #index .column h3 {
+    font-size: 20px; }
+  #index div .redes i {
+    font-size: 30px; } }
+
+@media (max-width: 1440px) {
+  #index .jordan {
+    max-width: 250px; }
   #index input {
     width: 150px; }
   #index .listado1 {
-    padding: 10px; }
-  #index .precio {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
@@ -188,23 +171,9 @@
   #index div .redes i {
     font-size: 30px; } }
 
-@media (max-width: 1440px) {
-  #index .jordan {
-    max-width: 200px; }
-  #index input {
-    width: 150px; }
-  #index .column h1 {
-    font-size: 20px; }
-  #index .column h3 {
-    font-size: 20px; }
-  #index div .redes i {
-    font-size: 30px; } }
-
 @media (min-width: 2560px) {
   #index .menu {
     font-size: 30px; }
-  #index .barra #caja-talles {
-    font-size: 28px; }
   #index i {
     font-size: 30px; }
   #index .listado1 {
@@ -443,6 +412,9 @@
 
 #index .fa-solid {
   margin-left: 5px; }
+
+#index .barra {
+  justify-content: space-around; }
 
 #index .menu {
   margin: 5px;
