@@ -429,6 +429,12 @@
     border-radius: 150px;
     max-width: 300px; } }
 
+@media (max-width: 1440px) {
+  #biografia .container1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column; } }
+
 #index .fa-solid {
   margin-left: 5px; }
 
