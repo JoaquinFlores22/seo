@@ -175,8 +175,6 @@
     width: 150px; }
   #index input {
     width: 150px; }
-  #index .listado1 {
-    padding: 10px; }
   #index .precio {
     display: flex;
     flex-direction: row;
