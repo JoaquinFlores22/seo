@@ -113,15 +113,26 @@
         }
     }
 
-    @media (min-width:1024px) {
+    @media (max-width:768px) {
         .jordan {
-            max-width: 100px;
-            ;
+            width: 150px;
+
         }
 
         input {
             width: 150px;
         }
+
+        .listado1 {
+            padding: 10px;
+        }
+
+        .precio {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
 
 
         .column h1 {
@@ -227,9 +238,6 @@
             border-radius: 150px;
             max-width: 300px;
         }
-    }
-    @media (max-width:1980px){
-
     }
 }
 
